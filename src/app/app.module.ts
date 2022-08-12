@@ -7,6 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { EmployeeListPageComponent } from './employee-list-page/employee-list-page.component';
 import { EmployeeDetailPageComponent } from './employee-detail-page/employee-detail-page.component';
 import { AddingEmployeePageComponent } from './adding-employee-page/adding-employee-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './admin/admin.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { AddingEmployeePageComponent } from './adding-employee-page/adding-emplo
     LoginComponent,
     EmployeeListPageComponent,
     EmployeeDetailPageComponent,
-    AddingEmployeePageComponent
+    AddingEmployeePageComponent,
+    AdminComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
